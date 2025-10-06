@@ -1,0 +1,52 @@
+.taskForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.taskFormInput {
+    padding: 0.75rem;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.taskFormInput:focus {
+    outline: none;
+    border-color: var(--color-focus);
+    box-shadow: 0 0 0 3px rgba(var(--color-focus) / 0.1);
+}
+
+.taskFormInput::placeholder {
+    color: var(--color-text-muted);
+}
+
+.taskFormNumber {
+    width: 100%;
+}
+
+.taskFormButton {
+    padding: 0.75rem 1.5rem;
+    background: var(--color-focus);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+}
+
+.taskFormButton:hover {
+    background: rgba(var(--color-focus) / 0.9);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(var(--color-focus) / 0.3);
+}
+
+.taskFormButton:active {
+    transform: translateY(0);
+}
